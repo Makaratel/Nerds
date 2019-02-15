@@ -118,7 +118,8 @@ body{
 	color: rgba(0, 0, 0, 1);
 }
 
-.menu__link:hover{
+.menu__link:hover,
+.menu__link:focus{
 	color: rgba(251, 86, 90, 1);
 }
 
@@ -203,7 +204,9 @@ body{
 }
 
 .description__button:hover,
-.contacts__button:hover{
+.description__button:focus,
+.contacts__button:hover,
+.contacts__button:focus{
 	background-color: rgba(231, 66, 70, 1);
 }
 
@@ -374,15 +377,18 @@ body{
 	background-color: rgba(239, 200, 74, 1);
 }
 
-.service-item__button--1:hover{
+.service-item__button--1:hover,
+.service-item__button--1:focus{
 	background-color: rgba(231, 66, 70, 1);
 }
 
-.service-item__button--2:hover{
+.service-item__button--2:hover,
+.service-item__button--2:focus{
 	background-color: rgba(0, 188, 108, 1);
 }
 
-.service-item__button--3:hover{
+.service-item__button--3:hover,
+.service-item__button--3:focus{
 	background-color: rgba(234, 181, 52, 1);
 }
 
@@ -665,8 +671,13 @@ body{
 	background-color: rgba(225, 225, 225, 1);
 }
 
-.social__link:hover::before{
+.social__link:hover::before,
+.social__link:focus::before{
 	background-color: rgba(231, 66, 70, 1);
+}
+
+.social__link:focus::before{
+	outline: 2px solid rgba(55, 150, 247, 1);
 }
 
 .social__link:active::before{
