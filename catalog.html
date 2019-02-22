@@ -8,7 +8,9 @@
 </head>
 <body>
 	<header class="header container">
-		<img class="logo" src="img/logo.svg" width="165" height="65" alt="Наш логотип">
+		<a class="header__link" href="index.html">
+			<img class="header__logo" src="img/logo.png" width="160" height="65" alt="Наш логотип">
+		</a>
 		<nav class="menu">
 			<ul class="menu__list">
 				<li class="menu__item"><a class="menu__link" href="#">Студия</a></li>
@@ -25,7 +27,7 @@
 			<h1 class="main__title">Магазин готовых шаблонов</h1>
 		</div>
 
-		<div class="main__section-catalog">
+		<div class="main__section-catalog container">
 			<section class="filters">
 				<form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
 					<fieldset class="filters__filter filter-price">
@@ -36,12 +38,12 @@
 									<div class="price-control__bar"></div>
 									<div class="price-control__toogle price-control__toogle--min"></div>
 									<div class="price-control__toogle price-control__toogle--max"></div>
-									<label class="price-control__label price-control__label--min">
-										от<input class="price-control__input" type="text" name=""></label>
-									<label class="price-control__label price-control__label--max">
-										до<input class="price-control__input" type="text" name=""></label>
 								</div>
 							</div>
+							<label class="price-control__label price-control__label--min">
+								от<input class="price-control__input" type="text" name="price-min" placeholder="0"></label>
+							<label class="price-control__label price-control__label--max">
+								до<input class="price-control__input" type="text" name="price-max" placeholder="15000"></label>
 						</div>
 					</fieldset>
 
@@ -50,13 +52,16 @@
 						<div filter-grid__wrapper>
 							<ul class="filter-grid__list">
 								<li class="filter-grid__item">
-									<label class="filter-grid__label"><input class="filter-grid__checkbox" type="radio" name="grid" id="adaptive"></label>
+									<input class="filter-grid__radio" type="radio" name="grid" id="adaptive" checked>
+									<label class="filter-grid__label" for="adaptive">Адаптивная</label>
 								</li>
 								<li class="filter-grid__item">
-									<label class="filter-grid__label"><input class="filter-grid__checkbox" type="radio" name="grid" id="fix"></label>
+									<input class="filter-grid__radio" type="radio" name="grid" id="fix">
+									<label class="filter-grid__label" for="fix">Фиксированная</label>
 								</li>
 								<li class="filter-grid__item">
-									<label class="filter-grid__label"><input class="filter-grid__checkbox" type="radio" name="grid" id="routine"></label>
+									<input class="filter-grid__radio" type="radio" name="grid" id="routine">
+									<label class="filter-grid__label" for="routine">Резиновая</label>
 								</li>
 							</ul>
 						</div>
@@ -67,19 +72,24 @@
 						<div class="filter-feature__wrapper">
 							<ul class="filter-feature__list">
 								<li class="filter-feature__item">
-									<label class="filter-feature__label"><input class="filter-feature__checkbox" type="checkbox" name="slider" id="slider"></label>
+									<input class="filter-feature__checkbox" type="checkbox" name="slider" id="slider" checked>
+									<label class="filter-feature__label" for="slider">Слайдер</label>
 								</li>
 								<li class="filter-feature__item">
-									<label class="filter-feature__label"><input class="filter-feature__checkbox" type="checkbox" name="advance" id="advance"></label>
+									<input class="filter-feature__checkbox" type="checkbox" name="advance" id="advance">
+									<label class="filter-feature__label" for="advance">Блок преимуществ</label>
 								</li>
 								<li class="filter-feature__item">
-									<label class="filter-feature__label"><input class="filter-feature__checkbox" type="checkbox" name="news" id="news"></label>
+									<input class="filter-feature__checkbox" type="checkbox" name="news" id="news" checked>
+									<label class="filter-feature__label" for="news">Новости</label>
 								</li>
 								<li class="filter-feature__item">
-									<label class="filter-feature__label"><input class="filter-feature__checkbox" type="checkbox" name="gallery" id="gallery"></label>
+									<input class="filter-feature__checkbox" type="checkbox" name="gallery" id="gallery">
+									<label class="filter-feature__label" for="gallery">Галерея</label>
 								</li>
 								<li class="filter-feature__item">
-									<label class="filter-feature__label"><input class="filter-feature__checkbox" type="checkbox" name="cart" id="cart"></label>
+									<input class="filter-feature__checkbox" type="checkbox" name="cart" id="cart">
+									<label class="filter-feature__label" for="cart">Корзина</label>
 								</li>
 							</ul>
 						</div>
@@ -89,9 +99,50 @@
 			</section>
 
 			<section class="catalog">
-				<section class="sort"></section>
-				<section class="goods"></section>
-				<section class="pagination"></section>
+				<section class="catalog__item sort">
+					<h3 class="sort__title">Сортировать:</h3>
+					<ul class="sort__list sort-type">
+						<li class="sort-type__item"><a class="sort-type__link sort-type__link--active" href="#">По цене</a></li>
+						<li class="sort-type__item"><a class="sort-type__link" href="#">По типу</a></li>
+						<li class="sort-type__item"><a class="sort-type__link" href="#">По названию</a></li>
+					</ul>
+					<ul class="sort__list sort-destination">
+						<li class="sort-destination__item"><a class="sort-destination__link sort-destination__link--down sort-destination__link--active" href="#">По убыванию</a></li>
+						<li class="sort-destination__item"><a class="sort-destination__link sort-destination__link--up" href="#">По возрастанию</a></li>
+					</ul>
+				</section>
+
+				<section class="catalog__item goods">
+					<ul class="goods__list">
+						<li class="goods__item">
+							<img class="goods__picture" src="img/card-sedona.jpg" width="360" height="576" alt="Sedona">
+						</li>
+						<li class="goods__item">
+							<img class="goods__picture" src="img/card-pink.jpg" width="360" height="576" alt="Pink">
+						</li>
+						<li class="goods__item">
+							<img class="goods__picture" src="img/card-barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский">
+						</li>
+						<li class="goods__item">
+							<img class="goods__picture" src="img/card-mishka.jpg" width="360" height="576" alt="Mishka">
+						</li>
+						<li class="goods__item">
+							<img class="goods__picture" src="img/card-aplus.jpg" width="360" height="576" alt="A+">
+						</li>
+						<li class="goods__item">
+							<img class="goods__picture" src="img/card-kvast.jpg" width="360" height="576" alt="КВАСТ">
+						</li>
+					</ul>
+				</section>
+
+				<section class="catalog__item pagination">
+					<ul class="pagination__list">
+						<li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a></li>
+						<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+						<li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+						<li class="pagination__item"><a class="pagination__link pagination__link--next" href="#">Следующая</a></li>
+					</ul>
+				</section>
 			</section>
 		</div>
 	</main>
@@ -111,9 +162,9 @@
 		<section class="footer__social social container">
 			<h2 class="visually-hidden">Мы в социальных сетях</h2>
 			<ul class="social__list">
-				<li class="social__item"><a class="social__link" href="#">ВКонтакте</a></li>
-				<li class="social__item"><a class="social__link" href="#">Фейсбук</a></li>
-				<li class="social__item"><a class="social__link" href="#">Твиттер</a></li>
+				<li class="social__item"><a class="social__link social__link--vk" href="#">ВКонтакте</a></li>
+				<li class="social__item"><a class="social__link social__link--fb" href="#">Фейсбук</a></li>
+				<li class="social__item"><a class="social__link social__link--inst" href="#">Инстаграм</a></li>
 			</ul>
 			<div class="social__wrapper">
 				<p class="social__title">Давайте дружить, это выгодно!</p>
