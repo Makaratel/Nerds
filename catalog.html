@@ -15,7 +15,7 @@
 			<ul class="menu__list">
 				<li class="menu__item"><a class="menu__link" href="#">Студия</a></li>
 				<li class="menu__item"><a class="menu__link" href="#">Клиенты</a></li>
-				<li class="menu__item"><a class="menu__link" href="#">Магазин</a></li>
+				<li class="menu__item"><a class="menu__link menu__link--active" href="#">Магазин</a></li>
 				<li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
 				<li class="menu__item menu__item--cart"><a class="menu__link menu__link--cart" href="#">Корзина</a></li>
 			</ul>
@@ -23,7 +23,7 @@
 	</header>
 
 	<main>
-		<div class="main__title-wrapper">
+		<div class="main__title-wrapper container">
 			<h1 class="main__title">Магазин готовых шаблонов</h1>
 		</div>
 
@@ -43,13 +43,13 @@
 							<label class="price-control__label price-control__label--min">
 								от<input class="price-control__input" type="text" name="price-min" placeholder="0"></label>
 							<label class="price-control__label price-control__label--max">
-								до<input class="price-control__input" type="text" name="price-max" placeholder="15000"></label>
+								до<input class="price-control__input" type="text" name="price-max" placeholder="15 000"></label>
 						</div>
 					</fieldset>
 
 					<fieldset class="filters__filter filter-grid">
 						<legend class="filter-grid__title">Сетка:</legend>
-						<div filter-grid__wrapper>
+						<div class="filter-grid__wrapper">
 							<ul class="filter-grid__list">
 								<li class="filter-grid__item">
 									<input class="filter-grid__radio" type="radio" name="grid" id="adaptive" checked>
@@ -115,22 +115,99 @@
 				<section class="catalog__item goods">
 					<ul class="goods__list">
 						<li class="goods__item">
+							<div class="goods__wrapper toolbar">
+								<ul class="toolbar__list">
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+								</ul>
+							</div>
 							<img class="goods__picture" src="img/card-sedona.jpg" width="360" height="576" alt="Sedona">
+							<div class="goods__wrapper goods-description">
+								<h3 class="goods-description__title">Sedona</h3>
+								<p class="goods-description__text">Информационный сайт для туристов</p>
+								<button class="goods-description__button button">9 900 руб.</button>
+							</div>
 						</li>
+
 						<li class="goods__item">
+							<div class="goods__wrapper toolbar">
+								<ul class="toolbar__list">
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+								</ul>
+							</div>
 							<img class="goods__picture" src="img/card-pink.jpg" width="360" height="576" alt="Pink">
+							<div class="goods__wrapper goods-description">
+								<h3 class="goods-description__title">Pink app</h3>
+								<p class="goods-description__text">Продуктовый лэндинг, приложения для iOS и Android</p>
+								<button class="goods-description__button button">9 900 руб.</button>
+							</div>
 						</li>
+
 						<li class="goods__item">
+							<div class="goods__wrapper toolbar">
+								<ul class="toolbar__list">
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+								</ul>
+							</div>
 							<img class="goods__picture" src="img/card-barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский">
+							<div class="goods__wrapper goods-description">
+								<h3 class="goods-description__title">Barbershop</h3>
+								<p class="goods-description__text">Сайт салона красоты. Для мужчин, да.</p>
+								<button class="goods-description__button button">9 900 руб.</button>
+							</div>
 						</li>
+
 						<li class="goods__item">
+							<div class="goods__wrapper toolbar">
+								<ul class="toolbar__list">
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+								</ul>
+							</div>
 							<img class="goods__picture" src="img/card-mishka.jpg" width="360" height="576" alt="Mishka">
+							<div class="goods__wrapper goods-description">
+								<h3 class="goods-description__title">Mishka</h3>
+								<p class="goods-description__text">Интернет-магазин вязаных игрушек</p>
+								<button class="goods-description__button button">9 900 руб.</button>
+							</div>
 						</li>
+
 						<li class="goods__item">
+							<div class="goods__wrapper toolbar">
+								<ul class="toolbar__list">
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+								</ul>
+							</div>
 							<img class="goods__picture" src="img/card-aplus.jpg" width="360" height="576" alt="A+">
+							<div class="goods__wrapper goods-description">
+								<h3 class="goods-description__title">A plus</h3>
+								<p class="goods-description__text">Лэндинг курсов повышения квалификации</p>
+								<button class="goods-description__button button">9 900 руб.</button>
+							</div>
 						</li>
+
 						<li class="goods__item">
+							<div class="goods__wrapper toolbar">
+								<ul class="toolbar__list">
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+									<li class="toolbar__item"></li>
+								</ul>
+							</div>
 							<img class="goods__picture" src="img/card-kvast.jpg" width="360" height="576" alt="КВАСТ">
+							<div class="goods__wrapper goods-description">
+								<h3 class="goods-description__title">Кваст</h3>
+								<p class="goods-description__text">Промо-сайт производителя крафтового кваса</p>
+								<button class="goods-description__button button">9 900 руб.</button>
+							</div>
 						</li>
 					</ul>
 				</section>
