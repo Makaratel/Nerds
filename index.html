@@ -64,9 +64,9 @@
 			</ul>
 
 			<ul class="promo__list controls">
-				<li class="controls__item"><label class="controls__label" for="radio-1"></label></li>
-				<li class="controls__item"><label class="controls__label" for="radio-2"></label></li>
-				<li class="controls__item"><label class="controls__label" for="radio-3"></label></li>
+				<li class="controls__item"><label class="controls__label" for="radio-1" tabindex="0"></label></li>
+				<li class="controls__item"><label class="controls__label" for="radio-2" tabindex="0"></label></li>
+				<li class="controls__item"><label class="controls__label" for="radio-3" tabindex="0"></label></li>
 			</ul>
 		</section>
 
@@ -179,7 +179,10 @@
 	</footer>
 
 	<section class="popup-letter">
-		<h2 class="popup-letter__title">Напишите нам</h2>
+		<div class="popup-letter__wrapper-title">
+			<h2 class="popup-letter__title">Напишите нам</h2>
+			<button class="popup-letter__button-close">Закрыть</button>
+		</div>
 		<form class="popup-letter__form" action="https://echo.htmlacademy.ru" method="post">
 			<div class="popup-letter__wrapper">
 				<label class="popup-letter__label">Ваше имя:</label>
@@ -191,10 +194,11 @@
 			</div>
 			<div class="popup-letter__wrapper">
 				<label class="popup-letter__label">Текст письма:</label>
-				<textarea class="popup-letter__input popup-letter--textarea" id="textarea" placeholder="В свободной форме"></textarea>
+				<textarea class="popup-letter__input popup-letter__input--textarea" id="textarea" placeholder="В свободной форме"></textarea>
 			</div>
 			<button class="popup-letter__button button" type="submit">Отправить</button>
 		</form>
 	</section>
+	<script type="text/javascript" charset="utf-8" src="js/script_index.js"></script>
 </body>
-</html>>
+</html>

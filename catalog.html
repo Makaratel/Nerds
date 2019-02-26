@@ -29,6 +29,7 @@
 
 		<div class="main__section-catalog container">
 			<section class="filters">
+				<h2 class="visually-hidden">Фильтры</h2>
 				<form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
 					<fieldset class="filters__filter filter-price">
 						<legend class="filter-price__title">Стоимость:</legend>
@@ -36,8 +37,8 @@
 							<div class="filter-price__control price-control">
 								<div class="price-control__scale">
 									<div class="price-control__bar"></div>
-									<div class="price-control__toogle price-control__toogle--min"></div>
-									<div class="price-control__toogle price-control__toogle--max"></div>
+									<div class="price-control__toogle price-control__toogle--min" tabindex="0"></div>
+									<div class="price-control__toogle price-control__toogle--max" tabindex="0"></div>
 								</div>
 							</div>
 							<label class="price-control__label price-control__label--min">
@@ -53,15 +54,15 @@
 							<ul class="filter-grid__list">
 								<li class="filter-grid__item">
 									<input class="filter-grid__radio" type="radio" name="grid" id="adaptive" checked>
-									<label class="filter-grid__label" for="adaptive">Адаптивная</label>
+									<label class="filter-grid__label" for="adaptive" tabindex="0">Адаптивная</label>
 								</li>
 								<li class="filter-grid__item">
 									<input class="filter-grid__radio" type="radio" name="grid" id="fix">
-									<label class="filter-grid__label" for="fix">Фиксированная</label>
+									<label class="filter-grid__label" for="fix" tabindex="0">Фиксированная</label>
 								</li>
 								<li class="filter-grid__item">
 									<input class="filter-grid__radio" type="radio" name="grid" id="routine">
-									<label class="filter-grid__label" for="routine">Резиновая</label>
+									<label class="filter-grid__label" for="routine" tabindex="0">Резиновая</label>
 								</li>
 							</ul>
 						</div>
@@ -73,23 +74,23 @@
 							<ul class="filter-feature__list">
 								<li class="filter-feature__item">
 									<input class="filter-feature__checkbox" type="checkbox" name="slider" id="slider" checked>
-									<label class="filter-feature__label" for="slider">Слайдер</label>
+									<label class="filter-feature__label" for="slider" tabindex="0">Слайдер</label>
 								</li>
 								<li class="filter-feature__item">
 									<input class="filter-feature__checkbox" type="checkbox" name="advance" id="advance">
-									<label class="filter-feature__label" for="advance">Блок преимуществ</label>
+									<label class="filter-feature__label" for="advance" tabindex="0">Блок преимуществ</label>
 								</li>
 								<li class="filter-feature__item">
 									<input class="filter-feature__checkbox" type="checkbox" name="news" id="news" checked>
-									<label class="filter-feature__label" for="news">Новости</label>
+									<label class="filter-feature__label" for="news" tabindex="0">Новости</label>
 								</li>
 								<li class="filter-feature__item">
 									<input class="filter-feature__checkbox" type="checkbox" name="gallery" id="gallery">
-									<label class="filter-feature__label" for="gallery">Галерея</label>
+									<label class="filter-feature__label" for="gallery" tabindex="0">Галерея</label>
 								</li>
 								<li class="filter-feature__item">
 									<input class="filter-feature__checkbox" type="checkbox" name="cart" id="cart">
-									<label class="filter-feature__label" for="cart">Корзина</label>
+									<label class="filter-feature__label" for="cart" tabindex="0">Корзина</label>
 								</li>
 							</ul>
 						</div>
@@ -98,7 +99,7 @@
 				</form>
 			</section>
 
-			<section class="catalog">
+			<div class="catalog">
 				<section class="catalog__item sort">
 					<h3 class="sort__title">Сортировать:</h3>
 					<ul class="sort__list sort-type">
@@ -122,7 +123,7 @@
 									<li class="toolbar__item"></li>
 								</ul>
 							</div>
-							<img class="goods__picture" src="img/card-sedona.jpg" width="360" height="576" alt="Sedona">
+							<img class="goods__picture" src="img/card-sedona.jpg" width="360" height="576" alt="Sedona" tabindex="0">
 							<div class="goods__wrapper goods-description">
 								<h3 class="goods-description__title">Sedona</h3>
 								<p class="goods-description__text">Информационный сайт для туристов</p>
@@ -138,7 +139,7 @@
 									<li class="toolbar__item"></li>
 								</ul>
 							</div>
-							<img class="goods__picture" src="img/card-pink.jpg" width="360" height="576" alt="Pink">
+							<img class="goods__picture" src="img/card-pink.jpg" width="360" height="576" alt="Pink" tabindex="0">
 							<div class="goods__wrapper goods-description">
 								<h3 class="goods-description__title">Pink app</h3>
 								<p class="goods-description__text">Продуктовый лэндинг, приложения для iOS и Android</p>
@@ -154,7 +155,7 @@
 									<li class="toolbar__item"></li>
 								</ul>
 							</div>
-							<img class="goods__picture" src="img/card-barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский">
+							<img class="goods__picture" src="img/card-barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский" tabindex="0">
 							<div class="goods__wrapper goods-description">
 								<h3 class="goods-description__title">Barbershop</h3>
 								<p class="goods-description__text">Сайт салона красоты. Для мужчин, да.</p>
@@ -170,7 +171,7 @@
 									<li class="toolbar__item"></li>
 								</ul>
 							</div>
-							<img class="goods__picture" src="img/card-mishka.jpg" width="360" height="576" alt="Mishka">
+							<img class="goods__picture" src="img/card-mishka.jpg" width="360" height="576" alt="Mishka" tabindex="0">
 							<div class="goods__wrapper goods-description">
 								<h3 class="goods-description__title">Mishka</h3>
 								<p class="goods-description__text">Интернет-магазин вязаных игрушек</p>
@@ -186,7 +187,7 @@
 									<li class="toolbar__item"></li>
 								</ul>
 							</div>
-							<img class="goods__picture" src="img/card-aplus.jpg" width="360" height="576" alt="A+">
+							<img class="goods__picture" src="img/card-aplus.jpg" width="360" height="576" alt="A+" tabindex="0">
 							<div class="goods__wrapper goods-description">
 								<h3 class="goods-description__title">A plus</h3>
 								<p class="goods-description__text">Лэндинг курсов повышения квалификации</p>
@@ -202,7 +203,7 @@
 									<li class="toolbar__item"></li>
 								</ul>
 							</div>
-							<img class="goods__picture" src="img/card-kvast.jpg" width="360" height="576" alt="КВАСТ">
+							<img class="goods__picture" src="img/card-kvast.jpg" width="360" height="576" alt="КВАСТ" tabindex="0">
 							<div class="goods__wrapper goods-description">
 								<h3 class="goods-description__title">Кваст</h3>
 								<p class="goods-description__text">Промо-сайт производителя крафтового кваса</p>
@@ -213,6 +214,7 @@
 				</section>
 
 				<section class="catalog__item pagination">
+					<h3 class="visually-hidden">Навигация по страницам товаров</h3>
 					<ul class="pagination__list">
 						<li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a></li>
 						<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
@@ -220,7 +222,7 @@
 						<li class="pagination__item"><a class="pagination__link pagination__link--next" href="#">Следующая</a></li>
 					</ul>
 				</section>
-			</section>
+			</div>
 		</div>
 	</main>
 
@@ -249,5 +251,28 @@
 			</div>
 		</section>
 	</footer>
+
+	<section class="popup-letter">
+		<div class="popup-letter__wrapper-title">
+			<h2 class="popup-letter__title">Напишите нам</h2>
+			<button class="popup-letter__button-close">Закрыть</button>
+		</div>
+		<form class="popup-letter__form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="popup-letter__wrapper">
+				<label class="popup-letter__label">Ваше имя:</label>
+				<input class="popup-letter__input" type="text" name="surname" id="surname" placeholder="Имя Фамилия">
+			</div>
+			<div class="popup-letter__wrapper">
+				<label class="popup-letter__label">Ваш e-mail:</label>
+				<input class="popup-letter__input" type="email" name="email" id="email" placeholder="email@example.com">
+			</div>
+			<div class="popup-letter__wrapper">
+				<label class="popup-letter__label">Текст письма:</label>
+				<textarea class="popup-letter__input popup-letter__input--textarea" id="textarea" placeholder="В свободной форме"></textarea>
+			</div>
+			<button class="popup-letter__button button" type="submit">Отправить</button>
+		</form>
+	</section>
+	<script type="text/javascript" charset="utf-8" src="js/script_catalog.js"></script>
 </body>
-</html>>
+</html>
