@@ -784,8 +784,10 @@ body{
 }
 
 .price-control__bar{
+	position: absolute;
 	height: 100%;
-	width: 64%;
+	right: 0%;
+	left: 0%;
 	background-color: rgba(0, 202, 116, 1);
 }
 
@@ -803,21 +805,16 @@ body{
 }
 
 .price-control__toogle--min{
-	left: -4%;
+	left: 0%;
 }
 
 .price-control__toogle--max{
-	left: 65%;
+	left: 90.5%;
 }
 
-.price-control__toogle:hover{
-	width: 6px;
-	height: 6px;
-}
-
+.price-control__toogle:hover,
 .price-control__toogle:active{
-	width: 8px;
-	height: 8px;
+	background-color: rgba(251, 86, 90, 1);
 }
 
 .price-control__label,
@@ -828,6 +825,7 @@ body{
 	font-size: 16px;
 	line-height: 22px;
 	text-transform: uppercase;
+	text-align: center;
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -1545,7 +1543,7 @@ body{
 	position: absolute;
 	width: 23px;
 	height: 25px;
-	top: 25px;
+	top: 15px;
 	right: -10px;
 
 	font-size: 0;
