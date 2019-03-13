@@ -1617,6 +1617,7 @@ body{
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+
 }
 
 .popup-letter__wrapper{
@@ -1650,6 +1651,11 @@ body{
 	font-size: 16px;
 	line-height: 18px;
 	color: rgba(0, 0, 0, 1);
+}
+
+.popup-letter__wrapper--textarea{
+	-ms-flex-preferred-size: 760px;
+	    flex-basis: 760px;
 }
 
 .popup-letter__input--textarea{
