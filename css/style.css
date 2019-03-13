@@ -814,8 +814,11 @@ body{
 }
 
 .price-control__toogle:hover,
+.price-control__toogle:focus,
 .price-control__toogle:active{
-	background-color: rgba(251, 86, 90, 1);
+	width: 12px;
+	height: 12px;
+	border: 4px solid rgba(255, 255, 255, 1);
 }
 
 .price-control__label,
@@ -1440,6 +1443,14 @@ body{
 	height: 20px;
 }
 
+.social__link:hover::after,
+.social__link:focus::after{
+	-webkit-animation-name: social_spin;
+			animation-name: social_spin;
+	-webkit-animation-duration: 0.6s;
+			animation-duration: 0.6s;
+}
+
 .social__link:active::after{
 	opacity: 0.3;
 }
@@ -1725,8 +1736,61 @@ body{
 	background-color: rgba(215, 55, 59, 1);
 }
 
+@-webkit-keyframes social_spin{
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes social_spin{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes bounce{
+	0% {-webkit-transform: translateY(2000px);}
+	70% {-webkit-transform: translateY(-60px);}
+	90% {-webkit-transform: translateY(30px);}
+	100% {-webkit-transform: translateY(0);}
+}
+
+@keyframes bounce{
+	0% {transform: translateY(2000px);}
+	70% {transform: translateY(-60px);}
+	90% {transform: translateY(30px);}
+	100% {transform: translateY(0);}
+}
+
+@-webkit-keyframes shake{
+	0%, 100% {-webkit-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+}
+
+@keyframes shake{
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
 .popup--show{
 	display: -webkit-box;
-	display: -ms-flexbox;
-		display: flex;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-animation-name: bounce;
+			animation-name: bounce;
+	-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+			animation-timing-function: linear;
+}
+
+.popup--error{
+	-webkit-animation-name: shake;
+			animation-name: shake;
+	-webkit-animation-duration: 0.6s;
+			animation-duration: 0.6s;
+}
+
+.invalid{
+	background-color: rgba(246, 218, 218, 1);
 }

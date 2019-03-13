@@ -1,6 +1,10 @@
 var popup = document.querySelector(".popup-letter");
 var popupOpen = document.querySelector(".contacts__button");
 var popupClose = document.querySelector(".popup-letter__button-close");
+var form = document.querySelector(".popup-letter__form");
+var formName = form.querySelector("[name = surname]");
+var formMail = form.querySelector("[name = email]");
+var formText = form.querySelector("[name = text]");
 
 popupOpen.addEventListener("click", function(evt){
 	evt.preventDefault();
@@ -10,6 +14,21 @@ popupOpen.addEventListener("click", function(evt){
 popupClose.addEventListener("click", function(){
 	popup.classList.remove("popup--show");
 })
+
+var testError = function(field, form, evt){
+	if(field.value.length < 1){
+		evt.preventDefault();
+		form.classList.remove("popup--error");
+		form.classList.add("popup--error");
+		field.classList.add("invalid");
+	}
+}
+
+form.addEventListener("submit", function(evt){
+	testError(formName, form, evt);
+	testError(formMail, form, evt);
+	testError(formText, form, evt);
+	})
 
 var slider = document.querySelector('.price-control__scale');
 var bar = document.querySelector('.price-control__bar');
