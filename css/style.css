@@ -27,7 +27,7 @@
 
 body{
 	max-width: 1920px;
-	min-width: 1440px;
+	min-width: 1160px;
 	min-height: 1750px;
 	margin: 0 auto;
 	padding: 0;
@@ -62,8 +62,11 @@ body{
 }
 
 .header{
-	padding-top: 50px;
 	background-color: rgba(238, 238, 238, 1);
+}
+
+.header__wrapper{
+	padding-top: 50px;
 
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -166,9 +169,12 @@ body{
 }
 
 .promo{
+	background-color: rgba(238, 238, 238, 1);
+}
+
+.promo__wrapper{
 	margin-bottom: 80px;
 	position: relative;
-	background-color: rgba(238, 238, 238, 1);
 }
 
 .promo__list{
@@ -659,40 +665,16 @@ body{
 	background-color: transparent;
 }
 
+.brands__picture{
+	opacity: 0.3;
+}
+
 .brands__picture:hover{
-	opacity: 0;
+	opacity: 1;
 }
 
-.brands__item--1{
-	background: url(../img/brand-1-hover.png);
-}
-
-.brands__item--1:active{
-	background: url(../img/brand-1-active.png);
-}
-
-.brands__item--2{
-	background: url(../img/brand-2-hover.png);
-}
-
-.brands__item--2:active{
-	background: url(../img/brand-2-active.png);
-}
-
-.brands__item--3{
-	background: url(../img/brand-3-hover.png);
-}
-
-.brands__item--3:active{
-	background: url(../img/brand-3-active.png);
-}
-
-.brands__item--4{
-	background: url(../img/brand-4-hover.png);
-}
-
-.brands__item--4:active{
-	background: url(../img/brand-4-active.png);
+.brands__picture:active{
+	opacity: 0.1;
 }
 
 .main__title-wrapper{

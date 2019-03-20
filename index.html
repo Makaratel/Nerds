@@ -7,67 +7,71 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="header container">
-		<a class="header__link" href="index.html">
-			<img class="header__logo" src="img/logo.png" width="160" height="65" alt="Наш логотип">
-		</a>
-		<nav class="menu">
-			<ul class="menu__list">
-				<li class="menu__item"><a class="menu__link" href="#">Студия</a></li>
-				<li class="menu__item"><a class="menu__link" href="#">Клиенты</a></li>
-				<li class="menu__item"><a class="menu__link" href="catalog.html">Магазин</a></li>
-				<li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
-				<li class="menu__item menu__item--cart"><a class="menu__link menu__link--cart" href="#">Корзина</a></li>
-			</ul>
-		</nav>
+	<header class="header">
+		<div class="header__wrapper container">
+			<a class="header__link" href="index.html">
+				<img class="header__logo" src="img/logo.png" width="160" height="65" alt="Наш логотип">
+			</a>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a class="menu__link" href="#">Студия</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Клиенты</a></li>
+					<li class="menu__item"><a class="menu__link" href="catalog.html">Магазин</a></li>
+					<li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+					<li class="menu__item menu__item--cart"><a class="menu__link menu__link--cart" href="#">Корзина</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<main>
-		<section class="promo container">
-			<h2 class="visually-hidden">Наши преимущества</h2>
-			<input class="promo__slider-input promo__slider-input--1" type="radio" name="advantage" id="radio-1" checked>
-			<input class="promo__slider-input promo__slider-input--2" type="radio" name="advantage" id="radio-2">
-			<input class="promo__slider-input promo__slider-input--3" type="radio" name="advantage" id="radio-3">
-			<ul class="promo__list">
-				<li class="promo__item item-promo">
-					<div class="item-promo--slider-1">
-						<div class="item-promo__description description">
-							<p class="description__title">Долго, дорого, скрупулезно.</p>
-							<p class="description__text">Математически вывереный дизайн для вашего сайта или мобильного приложения.</p>
-							<a class="description__button button" href="#">Узнать больше</a>
+		<section class="promo">
+			<div class="promo__wrapper container">
+				<h2 class="visually-hidden">Наши преимущества</h2>
+				<input class="promo__slider-input promo__slider-input--1" type="radio" name="advantage" id="radio-1" checked>
+				<input class="promo__slider-input promo__slider-input--2" type="radio" name="advantage" id="radio-2">
+				<input class="promo__slider-input promo__slider-input--3" type="radio" name="advantage" id="radio-3">
+				<ul class="promo__list">
+					<li class="promo__item item-promo">
+						<div class="item-promo--slider-1">
+							<div class="item-promo__description description">
+								<p class="description__title">Долго, дорого, скрупулезно.</p>
+								<p class="description__text">Математически вывереный дизайн для вашего сайта или мобильного приложения.</p>
+								<a class="description__button button" href="#">Узнать больше</a>
+							</div>
+							<div class="item-promo__img-wrapper item-promo__img-wrapper--1"></div>
 						</div>
-						<div class="item-promo__img-wrapper item-promo__img-wrapper--1"></div>
-					</div>
-				</li>
+					</li>
 
-				<li class="promo__item item-promo">
-					<div class="item-promo--slider-2">
-						<div class="item-promo__description description">
-							<p class="description__title">Любим математику как никто другой.</p>
-							<p class="description__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-							<a class="description__button button" href="#">Узнать больше</a>
+					<li class="promo__item item-promo">
+						<div class="item-promo--slider-2">
+							<div class="item-promo__description description">
+								<p class="description__title">Любим математику как никто другой.</p>
+								<p class="description__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+								<a class="description__button button" href="#">Узнать больше</a>
+							</div>
+							<div class="item-promo__img-wrapper item-promo__img-wrapper--2"></div>
 						</div>
-						<div class="item-promo__img-wrapper item-promo__img-wrapper--2"></div>
-					</div>
-				</li>
+					</li>
 
-				<li class="promo__item item-promo">
-					<div class="item-promo--slider-3">
-						<div class="item-promo__description description">
-							<p class="description__title">Только ночь, только хардкор.</p>
-							<p class="description__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-							<a class="description__button button" href="#">Узнать больше</a>
+					<li class="promo__item item-promo">
+						<div class="item-promo--slider-3">
+							<div class="item-promo__description description">
+								<p class="description__title">Только ночь, только хардкор.</p>
+								<p class="description__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+								<a class="description__button button" href="#">Узнать больше</a>
+							</div>
+							<div class="item-promo__img-wrapper item-promo__img-wrapper--3"></div>
 						</div>
-						<div class="item-promo__img-wrapper item-promo__img-wrapper--3"></div>
-					</div>
-				</li>
-			</ul>
+					</li>
+				</ul>
 
-			<ul class="promo__list controls">
-				<li class="controls__item"><label class="controls__label" for="radio-1" tabindex="0"></label></li>
-				<li class="controls__item"><label class="controls__label" for="radio-2" tabindex="0"></label></li>
-				<li class="controls__item"><label class="controls__label" for="radio-3" tabindex="0"></label></li>
-			</ul>
+				<ul class="promo__list controls">
+					<li class="controls__item"><label class="controls__label" for="radio-1" tabindex="0"></label></li>
+					<li class="controls__item"><label class="controls__label" for="radio-2" tabindex="0"></label></li>
+					<li class="controls__item"><label class="controls__label" for="radio-3" tabindex="0"></label></li>
+				</ul>
+			</div>
 		</section>
 
 		<section class="service container">
@@ -136,16 +140,16 @@
 		<section class="brands container">
 			<h2 class="visually-hidden">Бренды</h2>
 			<ul class="brands__list">
-				<li class="brands__item brands__item--1"><a class="brands__link" href="https://htmlacademy.ru/">
+				<li class="brands__item"><a class="brands__link" href="https://htmlacademy.ru/">
 					<img class="brands__picture" src="img/brand-1.png" width="260" height="180" alt="HTML Academy">
 				</a></li>
-				<li class="brands__item brands__item--2"><a class="brands__link" href="#">
+				<li class="brands__item"><a class="brands__link" href="#">
 					<img class="brands__picture" src="img/brand-2.png" width="260" height="180" alt="Барбершоп Бородинский">
 				</a></li>
-				<li class="brands__item brands__item--3"><a class="brands__link" href="#">
+				<li class="brands__item"><a class="brands__link" href="#">
 					<img class="brands__picture" src="img/brand-3.png" width="260" height="180" alt="Очки Pink">
 				</a></li>
-				<li class="brands__item brands__item--4"><a class="brands__link" href="#">
+				<li class="brands__item"><a class="brands__link" href="#">
 					<img class="brands__picture" src="img/brand-4.png" width="260" height="180" alt="Mishka">
 				</a></li>
 			</ul>
@@ -192,7 +196,7 @@
 				<label class="popup-letter__label">Ваш e-mail:</label>
 				<input class="popup-letter__input" type="email" name="email" id="email" placeholder="email@example.com">
 			</div>
-			<div class="popup-letter__wrapper">
+			<div class="popup-letter__wrapper popup-letter__wrapper--textarea">
 				<label class="popup-letter__label">Текст письма:</label>
 				<textarea class="popup-letter__input popup-letter__input--textarea" name="text" id="textarea" placeholder="В свободной форме"></textarea>
 			</div>
